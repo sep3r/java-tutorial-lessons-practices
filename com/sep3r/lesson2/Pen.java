@@ -2,8 +2,10 @@ package com.sep3r.lesson2;
 
 //<Access modifire is public. We can use protect if we need to use it only in this package or private if we use it only in this class>
 //syntax is <Access Modifire> + <Type> + <Class Name>
+// if we use final in all class or methodes or fields it does not inherit to the childs
 public class Pen {
     //attributes  ویژگی
+    // <Access-Modifires> + <Type> + <Fileds-Name>
     private String name;
     private String color;
 
