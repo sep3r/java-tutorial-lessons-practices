@@ -1,5 +1,8 @@
 package com.sep3r.lesson2;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Lesson2Example {
 
     public static void main(String[] args) {
@@ -17,5 +20,23 @@ public class Lesson2Example {
             anim = new Cat();
         else
             anim = new Fish();
+        // use for and foreach
+        List<String> lst = new ArrayList<>();
+        lst.add("sepehr");
+        lst.add("sepeh");
+        lst.add("sepe");
+
+        for(String s : lst){
+            System.out.println(s);
+        }
+        for(int i = 0; i<lst.size(); i++){
+            System.out.println(lst.get(i));
+        }
+        int i = lst.size();
+        while (i>0){
+            System.out.println(lst.get(i-1));
+            i--;
+        }
+
     }
 }
