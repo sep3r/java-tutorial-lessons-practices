@@ -21,6 +21,9 @@ public class Lesson4Example {
         for (String s : list) {
             System.out.println("list :" + s);
         }
-
+        set.add("majid");
+        set.add("mahmood");
+        set.forEach(s -> System.out.println(s));
+        list.set(2, "david");
     }
 }
