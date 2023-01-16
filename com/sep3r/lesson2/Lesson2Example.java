@@ -21,6 +21,7 @@ public class Lesson2Example {
         animal2.move();
         //polymorphism dynamic binding
         Animal anim;
+        System.out.println(call);
         if (call == 1)
             anim = new Cat();
         else
