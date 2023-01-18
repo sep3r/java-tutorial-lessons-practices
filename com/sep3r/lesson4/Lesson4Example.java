@@ -29,10 +29,10 @@ public class Lesson4Example {
         list.set(2, "david");
 
         WrapperClass wrapperClass = getWrapper();
-        System.out.println(wrapperClass.getValue());
+        System.out.println(wrapperClass.getValue() + " "+ wrapperClass.getNumber());
     }
 
     private static WrapperClass getWrapper(){
-        return new WrapperClass<>("This is Wrap class");
+        return new WrapperClass<>("This is Wrap class", 16);
     }
 }
