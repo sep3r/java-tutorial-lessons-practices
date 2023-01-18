@@ -9,7 +9,9 @@ public class Lesson5Example{
         int length = macLog.getStringintoInt("sep3r.ir has a new host");
         System.out.println(length);
     }
-
+    public MacLog test(String s1){
+        return (String s)-> s1.length();
+    }
     interface MacLog{
         int getStringintoInt(String s);
     }
