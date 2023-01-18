@@ -1,5 +1,7 @@
 package com.sep3r.lesson4;
 
+import java.lang.reflect.Parameter;
+import java.sql.Wrapper;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -25,5 +27,12 @@ public class Lesson4Example {
         set.add("mahmood");
         set.forEach(s -> System.out.println(s));
         list.set(2, "david");
+
+        WrapperClass wrapperClass = getWrapper();
+        System.out.println(wrapperClass.getValue());
+    }
+
+    private static WrapperClass getWrapper(){
+        return new WrapperClass<>("This is Wrap class");
     }
 }
