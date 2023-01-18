@@ -30,6 +30,14 @@ public class Lesson4Example {
 
         WrapperClass wrapperClass = getWrapper();
         System.out.println(wrapperClass.getValue() + " "+ wrapperClass.getNumber());
+
+        List<Number> numberList = new ArrayList<>();
+        numberList.add(124L);
+        numberList.add(254d);
+
+        List<? super Integer> integerList = numberList;
+        integerList.add(517);
+
     }
 
     private static WrapperClass getWrapper(){
