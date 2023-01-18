@@ -1,4 +1,16 @@
 package com.sep3r.lesson5;
 
-public class Lesson5Example {
+import java.util.function.Function;
+import java.util.function.IntBinaryOperator;
+
+public class Lesson5Example{
+    public static void main(String[] args) {
+        MacLog macLog = (String s)-> s.length();
+        int length = macLog.getStringintoInt("sep3r.ir has a new host");
+        System.out.println(length);
+    }
+
+    interface MacLog{
+        int getStringintoInt(String s);
+    }
 }
