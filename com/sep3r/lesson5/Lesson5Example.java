@@ -1,18 +1,17 @@
 package com.sep3r.lesson5;
 
-import java.util.function.Function;
-import java.util.function.IntBinaryOperator;
-
-public class Lesson5Example{
+public class Lesson5Example {
     public static void main(String[] args) {
-        MacLog macLog = (String s)-> s.length();
-        int length = macLog.getStringintoInt("sep3r.ir has a new host");
-        System.out.println(length);
+        Lesson5Example lesson5Example = new Lesson5Example();
+        lesson5Example.test((number1, number2)->number1+ number2, 15, 180);
     }
-    public MacLog test(String s1){
-        return (String s)-> s1.length();
+    private void test(Checkpoint checkpoint, Integer number1, Integer number2){
+        System.out.println(checkpoint.sum(number1, number2));
     }
-    interface MacLog{
-        int getStringintoInt(String s);
+    @FunctionalInterface
+    interface Checkpoint{
+        int sum(Integer x, Integer y);
     }
+
+
 }
